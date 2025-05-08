@@ -1,0 +1,25 @@
+{
+  "name": "tourze/yii2-db-mysql",
+  "description": "Split db/mysql directory from yii2 framework",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": "^8.1",
+    "tourze/yii2-db": "0.0.*"
+  },
+  "require-dev": {
+    "maglnet/composer-require-checker": "^4",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yii\\db\\mysql\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "yii\\db\\mysql\\tests\\": "tests/"
+    }
+  }
+}
